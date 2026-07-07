@@ -46,8 +46,6 @@
   var vehicleButtons = document.querySelectorAll(".vehicle-btn");
   var distanceRange = document.getElementById("distanceRange");
   var distanceInput = document.getElementById("distanceInput");
-  var fromInput = document.getElementById("fromInput");
-  var toInput = document.getElementById("toInput");
   var estimateAmount = document.getElementById("estimateAmount");
   var estimateWhatsapp = document.getElementById("estimateWhatsapp");
 
@@ -64,14 +62,9 @@
     if (estimateAmount) estimateAmount.textContent = formatINR(fare);
 
     if (estimateWhatsapp) {
-      var from = (fromInput && fromInput.value.trim()) || "";
-      var to = (toInput && toInput.value.trim()) || "";
-      var routeText = from && to ? " from " + from + " to " + to : "";
-
       var message =
         "Hi Yavnika Tours, I'd like a quote for " +
         currentName +
-        routeText +
         " over " +
         distance +
         " km. Estimated fare: " +
@@ -94,9 +87,6 @@
       updateEstimate();
     });
   });
-
-  if (fromInput) fromInput.addEventListener("input", updateEstimate);
-  if (toInput) toInput.addEventListener("input", updateEstimate);
 
   if (distanceRange && distanceInput) {
     distanceRange.addEventListener("input", function () {
