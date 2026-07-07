@@ -273,7 +273,7 @@ input { font: inherit; }
 .trust-strip svg { color: var(--gold); flex-shrink: 0; }
 
 .hero-route { display: flex; flex-direction: column; align-items: center; }
-.route-svg { width: 100%; max-width: 420px; height: auto; }
+.route-svg { width: 100%; max-width: 320px; height: auto; }
 .hero-route-caption {
   text-align: center;
   font-size: 0.82rem;
@@ -533,37 +533,32 @@ h2 {
 }
 .route-card {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.7rem;
   padding: 1.8rem 2rem;
   border-radius: var(--radius-lg);
   background: var(--navy-950);
   color: var(--white);
-  flex-wrap: wrap;
 }
+.route-card-icon {
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 0.3rem;
+}
+.route-card-desc { color: rgba(255, 255, 255, 0.7); font-size: 0.92rem; margin: 0; }
 .route-card-any {
+  align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
   gap: 0.9rem;
   background: transparent;
   border: 1.5px dashed rgba(13, 27, 76, 0.25);
   color: var(--ink);
 }
 .route-any-title { font-weight: 700; font-size: 1.05rem; margin: 0; }
-.route-from, .route-to {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-.route-label {
-  margin-left: auto;
-  font-size: 0.78rem;
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-}
 
 /* ===== Contact ===== */
 .contact { background: linear-gradient(160deg, var(--navy-800), var(--navy-950)); color: var(--white); }
