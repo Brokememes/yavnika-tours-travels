@@ -106,7 +106,7 @@ input { font: inherit; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding-block: 0.5rem;
+  padding-block: 0.125rem;
 }
 .brand {
   display: flex;
@@ -115,7 +115,7 @@ input { font: inherit; }
   color: var(--navy-900);
   margin-right: auto;
 }
-.brand-logo { height: 64px; width: auto; display: block; }
+.brand-logo { height: 76px; width: auto; display: block; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-text strong {
   font-family: var(--font-display);
