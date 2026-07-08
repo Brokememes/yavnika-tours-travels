@@ -116,6 +116,13 @@ input { font: inherit; }
   margin-right: auto;
 }
 .brand-logo { height: 76px; width: auto; display: block; }
+.brand-tagline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--navy-900);
+  white-space: nowrap;
+}
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-text strong {
   font-family: var(--font-display);
